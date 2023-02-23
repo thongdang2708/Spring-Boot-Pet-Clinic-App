@@ -21,7 +21,26 @@ spring.datasource.username=*****(Hidden for security)
 
 spring.datasource.password=************(Hidden for security)
 
+```bash
 To start, use "mvn clean spring-boot:run"
+```
+
+or
+
+```bash
+docker-compose up
+```
+
+When stopping the app, close with the below command in backend directory:
+
+```bash
+docker-compose down
+```
+
+Checking the running containers, use the command in backend directory:
+
+```bash
+docker-compose ps
+```
 
 
-# Spring-Boot-Pet-Clinic-App
