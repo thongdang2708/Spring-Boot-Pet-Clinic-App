@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+    petclinicapp:
+      restart: always
+      build:
+        context: ./
+        dockerfile: Dockerfile
+      ports:
+        - "8080:8080"
+      networks:
+        - petapp
+      environment:
+        SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/pet
+        SPRING_DATASOURCE_USERNAME: root
+        SPRING_DATASOURCE_PASSWORD: Duythong1998
+      depends_on:
+        - mysqldb
+      
+    mysqldb:
+      image: mysql:5.7
+      ports:
+        - "3304:3306"
+      environment:
+        MYSQL_DATABASE: pet
+        MYSQL_PASSWORD: Duythong1998
+        MYSQL_ROOT_PASSWORD: Duythong1998
+      networks:
+        - petapp
+  
+networks:
+    petapp:
