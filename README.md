@@ -1,5 +1,5 @@
 # Pet-Clinic-App-with-Spring-Boot-Spring-Data-JPA-Spring-Security-MySQL
-APIs for Pet Clinic App with Authentication and Authorisation based on Spring Boot + Spring Data JPA + Spring Security + MySQL
+APIs for Pet Clinic App with Authentication and Authorisation based on Spring Boot + Spring Data JPA + Spring Security + MySQL + Docker
 
 Warning: Due to high charge costs for AWS services, database is no longer hosted on AWS RDS. I built on Docker instead.
 
