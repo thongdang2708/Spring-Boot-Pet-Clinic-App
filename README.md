@@ -28,6 +28,10 @@ To start, use "mvn clean spring-boot:run"
 or
 
 ```bash
+docker network create employeeapp
+```
+
+```bash
 docker-compose up
 ```
 
@@ -36,6 +40,8 @@ When stopping the app, close with the below command in backend directory:
 ```bash
 docker-compose down
 ```
+
+
 
 Checking the running containers, use the command in backend directory:
 
