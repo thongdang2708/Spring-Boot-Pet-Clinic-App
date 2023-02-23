@@ -28,7 +28,7 @@ To start, use "mvn clean spring-boot:run"
 or
 
 ```bash
-docker network create employeeapp
+docker network create petapp
 ```
 
 ```bash
