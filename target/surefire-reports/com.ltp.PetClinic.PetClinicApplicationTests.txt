@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.ltp.PetClinic.PetClinicApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.69 s - in com.ltp.PetClinic.PetClinicApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.619 s - in com.ltp.PetClinic.PetClinicApplicationTests

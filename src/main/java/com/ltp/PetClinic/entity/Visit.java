@@ -14,6 +14,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Past;
 
 @Entity
 @Table(name = "visit")
@@ -25,7 +26,7 @@ public class Visit {
     private Long id;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    @CheckDate(message = "Date must be today or in the past!")
+    @Past(message = "Date must be today or in the past!")
     @Column(name = "date")
     private Date date;
 
